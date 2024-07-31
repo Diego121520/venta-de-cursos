@@ -1,0 +1,126 @@
+.about-hero {
+    position: relative;
+    text-align: center;
+    color: black;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.about-hero-text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+    color: black; /* Asegura que el texto sea legible sobre el fondo */
+}
+
+.about-hero-text h2 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.about-hero-text p {
+    font-size: 24px;
+    margin: 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.about-details {
+    margin-top: 40px;
+    padding: 2rem;
+}
+
+.about-details p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-details a {
+    color: #0D5CA0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.about-details a:hover {
+    color: #084d7a;
+}
+
+.video-presentation {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer {
+    background: rgb(13, 91, 160);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-item {
+    background: #ffffff;
+    color: #333; /* Cambiado de blanco a un color más adecuado para el texto */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 300px;
+    flex: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-item i {
+    font-size: 2rem;
+    color: rgb(13, 91, 160);
+}
+
+.about-item h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.about-item p {
+    color: #555;
+}
+
+blockquote {
+    font-style: italic;
+    color: #777;
+    border-left: 4px solid rgb(13, 91, 160);
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
