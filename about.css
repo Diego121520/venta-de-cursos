@@ -68,6 +68,44 @@
     text-align: center;
 }
 
+/* Responsividad */
+@media (max-width: 768px) {
+    .about-hero-text h2 {
+        font-size: 28px;
+    }
+
+    .about-hero-text p {
+        font-size: 20px;
+    }
+
+    .about-details p {
+        font-size: 16px;
+    }
+
+    .video-presentation video {
+        width: 100%; /* Asegura que el video se ajuste al ancho de la pantalla */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-text h2 {
+        font-size: 24px;
+    }
+
+    .about-hero-text p {
+        font-size: 16px;
+    }
+
+    .about-details p {
+        font-size: 14px;
+    }
+
+    .video-presentation video {
+        width: 100%; /* Asegura que el video se ajuste al ancho de la pantalla */
+    }
+}
+
+
 footer {
     background: rgb(13, 91, 160);
     color: white;

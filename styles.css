@@ -7,19 +7,42 @@ body {
     padding: 0;
     background: #f1f1f1;
     color: #333;
-    padding-bottom: 100px; /* Para evitar que el contenido final quede oculto detrás del botón */
+    padding-bottom: 100px; /* Para evitar que el contenido final quede oculto detrás del footer */
 }
 
 header {
-    background-color: rgba(13, 92, 160, 0.60);
+    background: linear-gradient(90deg, rgba(13, 92, 160, 0.85), rgba(13, 92, 160, 0.60));
     color: white;
     padding: 20px;
-    position: absolute; /* Cambiado de fixed a absolute */
-    width: 97.1%;
-    z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    top: 0; /* Asegura que el encabezado esté en la parte superior */
+    position: absolute; /* Fijo para que el encabezado permanezca en la parte superior al hacer scroll */
+    width: 97%; /* Asegura que el encabezado cubra toda la pantalla */
+    top: 0;
     left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumentar la sombra para más profundidad */
+    display: flex; /* Asegura que el contenido del encabezado esté en una línea */
+    justify-content: space-between; /* Espacia el contenido del encabezado */
+    align-items: center;
+}
+
+header h1 {
+    color: #FFF;
+    font-family: 'Rochester', cursive;
+    font-size: 36px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+    text-decoration: none; /* Cambiar a none para un estilo más limpio */
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #ffeb3b; /* Color llamativo en el hover */
+    transform: scale(1.1); /* Aumentar tamaño en el hover */
 }
 
 .header-content {
@@ -28,6 +51,17 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: auto;
+    width: 100%;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
 }
 
 header h1 {
@@ -43,10 +77,6 @@ nav a {
     font-size: 16px;
     text-decoration: underline;
     transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ffeb3b;
 }
 
 nav a:hover {
@@ -80,6 +110,7 @@ nav a:hover {
 }
 
 .hero-text {
+    margin-top: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -89,6 +120,8 @@ nav a:hover {
     width: 80%;
     max-width: 600px;
     color: #fff;
+    padding: 20px; /* Añade padding para que el texto no toque los bordes */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del elemento */
 }
 
 .hero-text h2 {
@@ -160,6 +193,51 @@ nav a:hover {
     color: #555;
 }
 
+/* Responsividad */
+@media (max-width: 768px) {
+    .packs h2 {
+        font-size: 24px;
+    }
+
+    .pack {
+        max-width: 100%;
+    }
+
+    .pack i {
+        font-size: 35px;
+    }
+
+    .pack h3 {
+        font-size: 20px;
+    }
+
+    .pack p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .packs h2 {
+        font-size: 20px;
+    }
+
+    .pack {
+        max-width: 100%;
+    }
+
+    .pack i {
+        font-size: 30px;
+    }
+
+    .pack h3 {
+        font-size: 18px;
+    }
+
+    .pack p {
+        font-size: 12px;
+    }
+}
+
 .cta {
     position: fixed;
     bottom: 20px;
@@ -208,6 +286,10 @@ blockquote {
         font-size: 24px;
     }
 
+    nav a {
+        font-size: 14px;
+    }
+
     .hero-text h2 {
         font-size: 24px;
     }
@@ -223,11 +305,20 @@ blockquote {
     .pack {
         max-width: 100%;
     }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }
 
 @media (max-width: 480px) {
     header h1 {
         font-size: 20px;
+    }
+
+    nav a {
+        font-size: 12px;
     }
 
     .hero-text h2 {
@@ -255,7 +346,7 @@ blockquote {
     }
 
     .cta-button {
-        font-size: 14px;
-        padding: 10px 20px;
+        font-size: 12px;
+        padding: 8px 16px;
     }
 }

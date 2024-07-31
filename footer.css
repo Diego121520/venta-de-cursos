@@ -1,6 +1,6 @@
 .footer-container {
     width: 100%;
-    height: 120px;
+    height: 100px;
     position: absolute;
 }
 
@@ -14,14 +14,16 @@
 }
 
 .footer-content {
-    width: 1262px;
-    height: 52px;
-    position: absolute;
-    top: 48px;
-    left: 72px;
+    max-width: 1262px; /* Ajusta el tamaño máximo del contenido */
+    /* margin: 0 auto; Centra el contenido */
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos de forma equitativa */
+    align-items: center; /* Centra verticalmente los elementos */
 }
 
 .footer-item {
+    margin-left: 20px;
+    margin-top: 20px;
     color: white;
     font-size: 16px;
     font-family: Roboto, sans-serif;
@@ -47,6 +49,7 @@
 }
 
 .footer-icon {
+    margin-top: 20px;
     position: absolute;
     /* background: white; */
 }
@@ -73,6 +76,7 @@
 }
 
 .footer-text {
+    margin-top: 20px;
     color: white;
     font-size: 16px;
     font-family: Roboto, sans-serif;
