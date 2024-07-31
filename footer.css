@@ -2,6 +2,7 @@
     width: 100%;
     height: 100px;
     position: absolute;
+    bottom: 0;
 }
 
 .footer-background {
@@ -14,87 +15,86 @@
 }
 
 .footer-content {
-    max-width: 1262px; /* Ajusta el tamaño máximo del contenido */
-    /* margin: 0 auto; Centra el contenido */
+    max-width: 1262px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Espacia los elementos de forma equitativa */
-    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
 }
 
 .footer-item {
-    margin-left: 20px;
-    margin-top: 20px;
     color: white;
     font-size: 16px;
     font-family: Roboto, sans-serif;
     font-weight: 400;
     word-wrap: break-word;
-    position: absolute;
+    margin: 10px 0;
+    flex: 1 1 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-item p {
     margin-left: 5px;
 }
 
-.phone {
-    /* width: 250px; */
-    top: 0;
-}
-
-.email {
-    width: 250px;
-    top: 32px;
+.phone, .email, .footer-icon {
+    margin: 10px 0;
 }
 
 .footer-icon {
-    margin-top: 20px;
-    position: absolute;
-    /* background: white; */
+    display: flex;
+    justify-content: space-between;
 }
 
-.icon1 {
-    width: 24px;
-    height: 24px;
-    top: 16px;
-    left: 1238px;
-}
-
-.icon2 {
-    width: 20px;
-    height: 20px;
-    top: 16px;
-    left: 1134px;
-}
-
-.icon3 {
-    width: 24px;
-    height: 24px;
-    top: 16px;
-    left: 1184px;
+.footer-icon img {
+    margin: 0 10px;
 }
 
 .footer-text {
-    margin-top: 20px;
     color: white;
     font-size: 16px;
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    position: absolute;
+    margin: 10px 0;
+    text-align: center;
+    flex: 1 1 100%;
 }
 
-.question {
-    left: 592px;
-    top: 33px;
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .footer-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-icon {
+        justify-content: flex-start;
+    }
+
+    .footer-icon img {
+        margin: 10px 5px;
+    }
 }
 
-.about {
-    left: 592px;
-    top: 1px;
-}
+@media (max-width: 480px) {
+    .footer-content {
+        padding: 10px;
+    }
 
-.footer-phone {
-    color: #fff;
-    /* margin-left: 10px; */
+    .footer-item {
+        font-size: 14px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
 }
