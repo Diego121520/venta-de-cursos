@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Rochester&family=Roboto:wght@400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
+a:focus {
+    color:#ffeb3b
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background: #f1f1f1;
     color: #333;
-    padding-bottom: 100px; /* Para evitar que el contenido final quede oculto detrás del footer */
+    /* padding-bottom: 100px; Para evitar que el contenido final quede oculto detrás del footer */
 }
 
 header {
-    background: linear-gradient(90deg, rgba(13, 92, 160, 0.85), rgba(13, 92, 160, 0.60));
+    /* background: linear-gradient(90deg, rgba(13, 92, 160, 0.85), rgba(13, 92, 160, 0.60)); */
+    background: linear-gradient(90deg, #4caf4f94, #4caf4f65);
     color: white;
     padding: 20px;
     position: absolute; /* Fijo para que el encabezado permanezca en la parte superior al hacer scroll */
@@ -80,7 +85,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffeb3b;
+    color: #FFA726;
 }
 
 .hero {

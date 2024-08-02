@@ -122,12 +122,12 @@ footer {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    align-items: center;
+    align-items: stretch; /* Asegura que los elementos tengan la misma altura */
 }
 
 .about-item {
     background: #ffffff;
-    color: #333; /* Cambiado de blanco a un color más adecuado para el texto */
+    color: #333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -153,6 +153,7 @@ footer {
 
 .about-item p {
     color: #555;
+    margin: 0.5rem 0; /* Agrega un margen para separar los párrafos */
 }
 
 blockquote {
