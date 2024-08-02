@@ -156,6 +156,10 @@ nav a:hover {
         width: 120px; /* Reducir más el tamaño del logo en dispositivos móviles */
     }
 
+    header nav {
+        margin-right: 15px;
+    }
+
     header nav a {
         font-size: 12px; /* Reducir más el tamaño de la fuente en dispositivos móviles */
     }
