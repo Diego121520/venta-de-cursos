@@ -152,6 +152,7 @@ nav a:hover {
     }
 
     header img {
+        height: 60;
         width: 100px; /* Reducir más el tamaño del logo en dispositivos móviles */
     }
 
@@ -319,7 +320,7 @@ nav a:hover {
     }
 
     .cta {
-        bottom: 110px;
+        bottom: 80px;
         right: 55px;
     }
 }
