@@ -144,6 +144,31 @@ nav a:hover {
     font-weight: bold;
 }
 
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    header {
+        padding: 10px; /* Reducir el padding general en dispositivos móviles */
+    }
+
+    header img {
+        width: 150px; /* Reducir más el tamaño del logo en dispositivos móviles */
+    }
+
+    header nav a {
+        font-size: 12px; /* Reducir más el tamaño de la fuente en dispositivos móviles */
+    }
+
+    .cta-button {
+        padding: 8px 16px; /* Reducir más el padding en dispositivos móviles */
+        font-size: 12px; /* Reducir más el tamaño de la fuente en dispositivos móviles */
+    }
+}
+
+
+
+/* FIN DEL HEADER */
+
 .packs {
     margin-top: 20px;
     padding: 40px 20px;
