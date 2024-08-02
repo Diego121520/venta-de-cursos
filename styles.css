@@ -275,8 +275,8 @@ nav a:hover {
 
 .cta {
     position: fixed;
-    bottom: 50px;
-    right: 30px;
+    bottom: 20px;
+    right: 25px;
     z-index: 2000;
 }
 
